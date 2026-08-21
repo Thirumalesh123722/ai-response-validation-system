@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+body {
+  background-color: #0B0E14;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(91, 141, 239, 0.08), transparent 42%),
+    radial-gradient(circle at 85% 15%, rgba(79, 209, 197, 0.06), transparent 45%),
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: auto, auto, 44px 44px, 44px 44px;
+  background-position: 0 0, 0 0, -1px -1px, -1px -1px;
+  color: #E6E9EF;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection { background: #4FD1C5; color: #0B0E14; }
+
+.scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #242B38; border-radius: 8px; }
+
+@keyframes sweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.animate-sweep { animation: sweep 2.2s linear infinite; }
+
+@keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.animate-rise { animation: rise-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+.pulse-dot { animation: pulse-dot 1.6s ease-in-out infinite; }
+
+.card-surface {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0) 40%), #12161F;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 12px 24px -18px rgba(0,0,0,0.6);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card-surface:hover { border-color: #2E3646; }
