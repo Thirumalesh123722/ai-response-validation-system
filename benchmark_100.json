@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "category": "correct_concise",
+    "question": "What is the capital of France?",
+    "ai_response": "The capital of France is Paris.",
+    "reference_answer": "Paris is the capital of France.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 2,
+    "category": "correct_detailed",
+    "question": "How does photosynthesis work?",
+    "ai_response": "Photosynthesis is the biological process by which green plants and certain other organisms transform light energy into chemical energy. During photosynthesis in green plants, light energy is captured and used to convert water, carbon dioxide, and minerals into oxygen and energy-rich organic compounds like glucose.",
+    "reference_answer": "Photosynthesis converts light energy, water, and carbon dioxide into oxygen and glucose.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 3,
+    "category": "correct_concise",
+    "question": "What is the freezing point of water at standard atmospheric pressure in Celsius?",
+    "ai_response": "Water freezes at 0 degrees Celsius at 1 atm.",
+    "reference_answer": "0 degrees Celsius.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 4,
+    "category": "correct_detailed",
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "ai_response": "William Shakespeare wrote the tragic play Romeo and Juliet in the late 16th century, likely between 1591 and 1595.",
+    "reference_answer": "William Shakespeare wrote Romeo and Juliet.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 5,
+    "category": "correct_concise",
+    "question": "What is the chemical symbol for Gold?",
+    "ai_response": "The chemical symbol for Gold is Au.",
+    "reference_answer": "Au.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 6,
+    "category": "correct_detailed",
+    "question": "Explain Newton's First Law of Motion.",
+    "ai_response": "Newton's First Law of Motion, often called the law of inertia, states that an object at rest will remain at rest, and an object in motion will continue in motion with a constant velocity, unless acted upon by an external net force.",
+    "reference_answer": "An object remains at rest or in uniform straight-line motion unless acted upon by an external force.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 7,
+    "category": "correct_concise",
+    "question": "Which planet is known as the Red Planet?",
+    "ai_response": "Mars is known as the Red Planet.",
+    "reference_answer": "Mars.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 8,
+    "category": "correct_detailed",
+    "question": "What causes ocean tides on Earth?",
+    "ai_response": "Ocean tides are primarily caused by the gravitational pull exerted by the Moon and, to a lesser extent, the Sun, combined with the rotation of the Earth.",
+    "reference_answer": "The gravitational pull of the Moon and the Sun upon the Earth's oceans.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 9,
+    "category": "correct_concise",
+    "question": "What is the square root of 144?",
+    "ai_response": "The square root of 144 is 12.",
+    "reference_answer": "12.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 10,
+    "category": "correct_detailed",
+    "question": "What is the primary function of white blood cells in humans?",
+    "ai_response": "White blood cells (leukocytes) are a crucial part of the immune system responsible for defending the body against infectious disease and foreign invaders.",
+    "reference_answer": "To protect the body against pathogens and infections as part of the immune system.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 11,
+    "category": "correct_concise",
+    "question": "What is the currency of Japan?",
+    "ai_response": "The currency of Japan is the Japanese Yen (JPY).",
+    "reference_answer": "Japanese Yen.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 12,
+    "category": "correct_detailed",
+    "question": "What is the speed of light in a vacuum?",
+    "ai_response": "The speed of light in a vacuum is approximately 299,792,458 meters per second (about 300,000 km/s).",
+    "reference_answer": "Approximately 299,792,458 meters per second.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 13,
+    "category": "correct_concise",
+    "question": "Who painted the Mona Lisa?",
+    "ai_response": "Leonardo da Vinci painted the Mona Lisa.",
+    "reference_answer": "Leonardo da Vinci.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 14,
+    "category": "correct_detailed",
+    "question": "What is mitochondrial DNA and where is it inherited from in humans?",
+    "ai_response": "Mitochondrial DNA (mtDNA) is the small circular chromosome found inside mitochondria. In humans, it is inherited almost exclusively maternally (from the mother).",
+    "reference_answer": "DNA found in the mitochondria, inherited maternally from the mother.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 15,
+    "category": "correct_concise",
+    "question": "What is the largest organ in the human body?",
+    "ai_response": "The skin is the largest organ of the human body.",
+    "reference_answer": "The skin.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 16,
+    "category": "correct_detailed",
+    "question": "What is the Treaty of Versailles?",
+    "ai_response": "The Treaty of Versailles was the primary peace agreement signed in 1919 that officially brought World War I to an end between the Allied Powers and Germany.",
+    "reference_answer": "The 1919 peace treaty that formally ended World War I.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 17,
+    "category": "correct_concise",
+    "question": "In computer science, what does CPU stand for?",
+    "ai_response": "CPU stands for Central Processing Unit.",
+    "reference_answer": "Central Processing Unit.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 18,
+    "category": "correct_detailed",
+    "question": "What is an ecosystem?",
+    "ai_response": "An ecosystem is a biological community of interacting organisms (biotic factors) and their physical, non-living environment (abiotic factors) functioning together as a unit.",
+    "reference_answer": "A community of living organisms interacting with their physical environment.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 19,
+    "category": "correct_concise",
+    "question": "How many continents are there on Earth?",
+    "ai_response": "There are 7 continents on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and Australia.",
+    "reference_answer": "Seven continents.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 20,
+    "category": "correct_detailed",
+    "question": "What is the Doppler Effect?",
+    "ai_response": "The Doppler Effect is the change in frequency or wavelength of a wave in relation to an observer who is moving relative to the wave source, such as the pitch change of a passing siren.",
+    "reference_answer": "The apparent change in frequency of a wave due to relative motion between the source and observer.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 21,
+    "category": "correct_concise",
+    "question": "What is the hardest natural mineral known on Earth?",
+    "ai_response": "Diamond is the hardest naturally occurring mineral on Mohs hardness scale.",
+    "reference_answer": "Diamond.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 22,
+    "category": "correct_detailed",
+    "question": "What is the function of insulin in the human body?",
+    "ai_response": "Insulin is a hormone produced by the pancreas that allows cells throughout the body to absorb glucose from the bloodstream, thereby lowering and regulating blood sugar levels.",
+    "reference_answer": "A hormone that facilitates the uptake of glucose into cells, lowering blood glucose levels.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 23,
+    "category": "correct_concise",
+    "question": "What is the capital city of Canada?",
+    "ai_response": "Ottawa is the capital city of Canada.",
+    "reference_answer": "Ottawa.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 24,
+    "category": "correct_detailed",
+    "question": "What is a binary search algorithm and what is its time complexity?",
+    "ai_response": "Binary search is an efficient search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half. Its time complexity is O(log n).",
+    "reference_answer": "A search algorithm for sorted arrays that divides the interval in half, running in O(log n) time.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 25,
+    "category": "correct_concise",
+    "question": "What gas do plants absorb during photosynthesis?",
+    "ai_response": "Plants absorb carbon dioxide (CO2) from the atmosphere.",
+    "reference_answer": "Carbon dioxide (CO2).",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 26,
+    "category": "correct_detailed",
+    "question": "What is the greenhouse effect?",
+    "ai_response": "The greenhouse effect is the natural process where certain atmospheric gases (like CO2 and methane) trap heat radiated from Earth's surface, keeping the planet warm enough to sustain life.",
+    "reference_answer": "The trapping of thermal energy in Earth's atmosphere by greenhouse gases.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 27,
+    "category": "correct_concise",
+    "question": "What is the smallest prime number?",
+    "ai_response": "The smallest prime number is 2.",
+    "reference_answer": "2.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 28,
+    "category": "correct_detailed",
+    "question": "What is the primary difference between RAM and ROM?",
+    "ai_response": "RAM (Random Access Memory) is volatile temporary storage used for actively running programs and data, which loses its contents when powered down. ROM (Read-Only Memory) is non-volatile permanent storage used to store firmware or boot instructions.",
+    "reference_answer": "RAM is volatile read/write memory; ROM is non-volatile read-only memory.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 29,
+    "category": "correct_concise",
+    "question": "Who discovered penicillin?",
+    "ai_response": "Alexander Fleming discovered penicillin in 1928.",
+    "reference_answer": "Alexander Fleming.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 30,
+    "category": "correct_detailed",
+    "question": "Explain the concept of plate tectonics.",
+    "ai_response": "Plate tectonics is the scientific theory explaining that Earth's outer shell (lithosphere) is divided into large rigid plates that glide over the ductile asthenosphere, causing geological events like earthquakes, volcanoes, and mountain building.",
+    "reference_answer": "The geological theory that Earth's lithosphere consists of moving tectonic plates whose interactions form mountains, volcanoes, and earthquakes.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 31,
+    "category": "correct_concise",
+    "question": "What is the main component of Earth's atmosphere by volume?",
+    "ai_response": "Nitrogen makes up approximately 78% of Earth's atmosphere.",
+    "reference_answer": "Nitrogen.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 32,
+    "category": "correct_detailed",
+    "question": "What is osmosis?",
+    "ai_response": "Osmosis is the net spontaneous movement of solvent molecules through a selectively permeable membrane into a region of higher solute concentration, aiming to equalize the solute concentrations on both sides.",
+    "reference_answer": "The diffusion of water across a semipermeable membrane from low to high solute concentration.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 33,
+    "category": "correct_concise",
+    "question": "What is the boiling point of pure water at sea level in Fahrenheit?",
+    "ai_response": "Pure water boils at 212 degrees Fahrenheit at sea level.",
+    "reference_answer": "212 degrees Fahrenheit.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 34,
+    "category": "correct_detailed",
+    "question": "What is the function of the human kidneys?",
+    "ai_response": "The kidneys filter metabolic waste products and excess fluid from the blood to produce urine, while also balancing electrolytes, regulating blood pressure, and managing acid-base balance.",
+    "reference_answer": "Filtering blood to remove wastes and excess water, balancing fluids and electrolytes.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 35,
+    "category": "correct_concise",
+    "question": "Who developed the theory of general relativity?",
+    "ai_response": "Albert Einstein developed general relativity, publishing it in 1915.",
+    "reference_answer": "Albert Einstein.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 36,
+    "category": "correct_detailed",
+    "question": "What is an API in software development?",
+    "ai_response": "An Application Programming Interface (API) is a defined set of rules, protocols, and tools that allows different software applications to communicate and exchange data with one another.",
+    "reference_answer": "An interface that specifies interactions between multiple software intermediaries.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 37,
+    "category": "correct_concise",
+    "question": "What is the capital of Australia?",
+    "ai_response": "Canberra is the federal capital of Australia.",
+    "reference_answer": "Canberra.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 38,
+    "category": "correct_detailed",
+    "question": "What is the role of ribosomes in biological cells?",
+    "ai_response": "Ribosomes are molecular machines found within all living cells that perform protein synthesis by translating messenger RNA (mRNA) sequences into polypeptide chains.",
+    "reference_answer": "Ribosomes synthesize proteins by translating mRNA.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 39,
+    "category": "correct_concise",
+    "question": "What is the SI unit of electric current?",
+    "ai_response": "The SI unit of electric current is the Ampere (A).",
+    "reference_answer": "Ampere.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 40,
+    "category": "correct_detailed",
+    "question": "How does vaccination provide immunity?",
+    "ai_response": "Vaccines introduce a harmless antigen (weakened, killed, or fragment of a pathogen) to stimulate the immune system to produce antibodies and memory cells without causing the disease itself.",
+    "reference_answer": "By exposing the body to weakened or inactive antigens to stimulate an immune response and generate memory cells.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 41,
+    "category": "correct_concise",
+    "question": "What is the atomic number of Carbon?",
+    "ai_response": "The atomic number of carbon is 6.",
+    "reference_answer": "6.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 42,
+    "category": "correct_detailed",
+    "question": "What is the primary purpose of an index in a relational database?",
+    "ai_response": "An index is a database data structure (such as a B-Tree) that improves the speed of data retrieval operations on a table at the expense of additional writes and storage space.",
+    "reference_answer": "To accelerate search and query performance on database tables.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 43,
+    "category": "correct_concise",
+    "question": "What is the capital of Germany?",
+    "ai_response": "Berlin is the capital of Germany.",
+    "reference_answer": "Berlin.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 44,
+    "category": "correct_detailed",
+    "question": "What is the difference between synchronous and asynchronous execution?",
+    "ai_response": "Synchronous execution blocks subsequent tasks until the current operation completes, following a sequential flow. Asynchronous execution allows tasks to initiate and run in the background without blocking the main execution thread.",
+    "reference_answer": "Synchronous operations block execution until complete; asynchronous operations run independently without blocking.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 45,
+    "category": "correct_concise",
+    "question": "Which organ in the human body produces bile?",
+    "ai_response": "The liver produces bile, which is then stored in the gallbladder.",
+    "reference_answer": "The liver.",
+    "expected_label": "Pass"
+  },
+  {
+    "id": 46,
+    "category": "factual_error",
+    "question": "What is the capital of Australia?",
+    "ai_response": "The capital of Australia is Sydney.",
+    "reference_answer": "Canberra is the capital of Australia.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 47,
+    "category": "factual_error",
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "ai_response": "Water boils at 50 degrees Celsius at sea level.",
+    "reference_answer": "Water boils at 100 degrees Celsius at standard atmospheric pressure.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 48,
+    "category": "factual_error",
+    "question": "Who was the first President of the United States?",
+    "ai_response": "Abraham Lincoln was the first President of the United States.",
+    "reference_answer": "George Washington was the first President of the United States.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 49,
+    "category": "factual_error",
+    "question": "How many chromosomes do typical humans have in each somatic cell?",
+    "ai_response": "Typical humans have 32 chromosomes in their somatic cells.",
+    "reference_answer": "Humans typically have 46 chromosomes (23 pairs) in somatic cells.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 50,
+    "category": "factual_error",
+    "question": "What is the chemical formula for water?",
+    "ai_response": "The chemical formula for water is CO2.",
+    "reference_answer": "The chemical formula for water is H2O.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 51,
+    "category": "factual_error",
+    "question": "Which planet is closest to the Sun?",
+    "ai_response": "Jupiter is the closest planet to the Sun.",
+    "reference_answer": "Mercury is the closest planet to the Sun.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 52,
+    "category": "factual_error",
+    "question": "In what year did World War II end?",
+    "ai_response": "World War II ended in 1918.",
+    "reference_answer": "World War II ended in 1945.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 53,
+    "category": "factual_error",
+    "question": "What is the capital of Canada?",
+    "ai_response": "Toronto is the capital of Canada.",
+    "reference_answer": "Ottawa is the capital of Canada.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 54,
+    "category": "factual_error",
+    "question": "What is the primary gas found in Earth's atmosphere?",
+    "ai_response": "Oxygen makes up 90% of Earth's atmosphere.",
+    "reference_answer": "Nitrogen makes up approximately 78% of Earth's atmosphere.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 55,
+    "category": "factual_error",
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "ai_response": "Vincent van Gogh painted the Sistine Chapel ceiling.",
+    "reference_answer": "Michelangelo painted the Sistine Chapel ceiling.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 56,
+    "category": "subtle_error",
+    "question": "What is the speed of sound in dry air at 20 degrees Celsius?",
+    "ai_response": "The speed of sound in air at 20\u00b0C is about 3,000 meters per second.",
+    "reference_answer": "Approximately 343 meters per second.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 57,
+    "category": "subtle_error",
+    "question": "What is the pH of pure neutral water at 25 degrees Celsius?",
+    "ai_response": "The pH of neutral water is 14.",
+    "reference_answer": "The pH of pure water at 25\u00b0C is 7.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 58,
+    "category": "factual_error",
+    "question": "Which organ in the human body pumps blood?",
+    "ai_response": "The liver is the central organ that pumps blood throughout the body.",
+    "reference_answer": "The heart pumps blood through the circulatory system.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 59,
+    "category": "factual_error",
+    "question": "What is the square root of 64?",
+    "ai_response": "The square root of 64 is 6.",
+    "reference_answer": "8.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 60,
+    "category": "subtle_error",
+    "question": "How many days does it take for Earth to complete one orbit around the Sun?",
+    "ai_response": "Earth takes exactly 180 days to orbit the Sun.",
+    "reference_answer": "Approximately 365.25 days.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 61,
+    "category": "hallucination",
+    "question": "When was the Apollo 11 moon landing and who was on it?",
+    "ai_response": "Apollo 11 landed on Mars in 1985, commanded by John Glenn and Elon Musk, who built the first lunar colony.",
+    "reference_answer": "Apollo 11 landed on the Moon in July 1969, carrying Neil Armstrong, Buzz Aldrin, and Michael Collins.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 62,
+    "category": "hallucination",
+    "question": "What is the mechanism of action of penicillin?",
+    "ai_response": "Penicillin works by directly destroying the human nervous system and freezing red blood cells to cure bacterial infections.",
+    "reference_answer": "Penicillin inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 63,
+    "category": "hallucination",
+    "question": "Tell me about the founding of Google.",
+    "ai_response": "Google was founded in 1845 by Thomas Edison and Nikola Tesla in Chicago to produce electric bicycles.",
+    "reference_answer": "Google was founded in September 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 64,
+    "category": "hallucination",
+    "question": "What are the components of an atom?",
+    "ai_response": "An atom consists of small pieces of plastic glued together with honey and magnetic feathers.",
+    "reference_answer": "An atom consists of a nucleus containing protons and neutrons, surrounded by electrons.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 65,
+    "category": "hallucination",
+    "question": "Who was the author of the Harry Potter book series?",
+    "ai_response": "Harry Potter was written by Stephen King in 1952 based on his experiences in the Vietnam War.",
+    "reference_answer": "J.K. Rowling wrote the Harry Potter series.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 66,
+    "category": "hallucination",
+    "question": "Explain what photosynthesis produces.",
+    "ai_response": "Photosynthesis is when plants absorb moonlight to generate liquid gold and helium gas.",
+    "reference_answer": "Photosynthesis uses sunlight, water, and CO2 to produce glucose and oxygen.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 67,
+    "category": "hallucination",
+    "question": "What causes the seasons on Earth?",
+    "ai_response": "Earth's seasons are caused by the planet expanding and shrinking in diameter by 50% every six months.",
+    "reference_answer": "Seasons are caused by the tilt of Earth's rotational axis (approx 23.5 degrees) relative to its orbital plane around the Sun.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 68,
+    "category": "hallucination",
+    "question": "What is DNA?",
+    "ai_response": "DNA is a rare digital cryptocurrency invented by Satoshi Nakamoto to store banking transactions in blood vessels.",
+    "reference_answer": "DNA (deoxyribonucleic acid) is the hereditary material in humans and almost all other organisms.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 69,
+    "category": "hallucination",
+    "question": "What is the tallest mountain above sea level on Earth?",
+    "ai_response": "Mount Kilimanjaro in Florida is the tallest mountain on Earth, standing at 50,000 meters above sea level.",
+    "reference_answer": "Mount Everest in the Himalayas, standing at 8,848.86 meters above sea level.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 70,
+    "category": "hallucination",
+    "question": "Describe the function of red blood cells.",
+    "ai_response": "Red blood cells are responsible for thinking and sending electrical signals from the brain to your smartphone.",
+    "reference_answer": "Red blood cells carry oxygen from the lungs to body tissues via hemoglobin and return carbon dioxide to the lungs.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 71,
+    "category": "irrelevant",
+    "question": "What is the capital of Italy?",
+    "ai_response": "I really enjoy baking chocolate chip cookies on Sunday mornings with fresh vanilla extract.",
+    "reference_answer": "Rome is the capital of Italy.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 72,
+    "category": "irrelevant",
+    "question": "How do you calculate the area of a circle?",
+    "ai_response": "The stock market fluctuates based on supply and demand dynamics across international commodities.",
+    "reference_answer": "The area of a circle is calculated using the formula A = \u03c0r\u00b2, where r is the radius.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 73,
+    "category": "irrelevant",
+    "question": "What is the boiling point of ethanol?",
+    "ai_response": "To wash your car properly, make sure you use a microfiber mitt and rinse with clean water first.",
+    "reference_answer": "The boiling point of ethanol is approximately 78.37 degrees Celsius (173.1 degrees F).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 74,
+    "category": "irrelevant",
+    "question": "Explain the law of supply and demand.",
+    "ai_response": "Penguins are flightless marine birds that live almost exclusively in the Southern Hemisphere.",
+    "reference_answer": "Supply and demand is an economic model determining price where price settles at equilibrium between quantity supplied and quantity demanded.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 75,
+    "category": "irrelevant",
+    "question": "What are the primary colors in additive color mixing (RGB)?",
+    "ai_response": "Yesterday it rained heavily in Seattle and the traffic was backed up for hours on the freeway.",
+    "reference_answer": "Red, Green, and Blue.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 76,
+    "category": "irrelevant",
+    "question": "How many players are on a standard soccer team on the pitch?",
+    "ai_response": "Baroque architecture features dramatic lighting, rich colors, and elaborate decorative elements.",
+    "reference_answer": "A standard soccer team has 11 players on the pitch, including the goalkeeper.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 77,
+    "category": "irrelevant",
+    "question": "What is the primary function of the lungs?",
+    "ai_response": "The guitar has six strings typically tuned to E, A, D, G, B, and E.",
+    "reference_answer": "The lungs facilitate gas exchange, taking in oxygen from the air and expelling carbon dioxide from the bloodstream.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 78,
+    "category": "irrelevant",
+    "question": "What is the currency used in the United Kingdom?",
+    "ai_response": "Photosynthesis produces glucose from sunlight in plant chloroplasts.",
+    "reference_answer": "The British Pound Sterling (GBP).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 79,
+    "category": "irrelevant",
+    "question": "How many days are in a standard non-leap calendar year?",
+    "ai_response": "The Pacific Ocean is the largest and deepest ocean basin on planet Earth.",
+    "reference_answer": "There are 365 days in a standard non-leap year.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 80,
+    "category": "irrelevant",
+    "question": "Who was the first person to step on the Moon?",
+    "ai_response": "Quantum computers use qubits that take advantage of superposition and entanglement.",
+    "reference_answer": "Neil Armstrong on July 20, 1969.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 81,
+    "category": "incomplete",
+    "question": "Compare mitosis and meiosis, explaining the purpose, cell division count, and resulting daughter cells for each.",
+    "ai_response": "Mitosis is a type of cell division.",
+    "reference_answer": "Mitosis produces 2 genetically identical diploid somatic cells through 1 division for growth and repair. Meiosis produces 4 genetically diverse haploid gametes through 2 successive divisions for sexual reproduction.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 82,
+    "category": "incomplete",
+    "question": "What are the three branches of the US federal government and what does each branch do?",
+    "ai_response": "One of the branches is the Executive branch.",
+    "reference_answer": "The three branches are: Legislative (makes laws, Congress), Executive (enforces laws, President), and Judicial (interprets laws, Supreme Court).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 83,
+    "category": "incomplete",
+    "question": "Name the four inner rocky planets of the solar system in order from the Sun.",
+    "ai_response": "Mercury and Venus are two of them.",
+    "reference_answer": "Mercury, Venus, Earth, and Mars.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 84,
+    "category": "incomplete",
+    "question": "What are the three states of matter commonly found on Earth and how do their molecular arrangements differ?",
+    "ai_response": "Solid is one state of matter where particles are tightly packed.",
+    "reference_answer": "Solids (tightly packed, fixed shape and volume), Liquids (close together but flowing, fixed volume, conforms to container), and Gases (well separated, free moving, expands to fill container).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 85,
+    "category": "incomplete",
+    "question": "What are the primary colors in painting and what secondary color does each pair create?",
+    "ai_response": "The primary colors are red, yellow, and blue.",
+    "reference_answer": "Primary colors are red, yellow, and blue. Mixing red+yellow creates orange, yellow+blue creates green, and blue+red creates purple.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 86,
+    "category": "incomplete",
+    "question": "List the four fundamental forces of nature in physics.",
+    "ai_response": "Gravity is one of the forces.",
+    "reference_answer": "Gravity, Electromagnetism, Strong Nuclear Force, and Weak Nuclear Force.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 87,
+    "category": "incomplete",
+    "question": "Describe the water cycle including evaporation, condensation, precipitation, and collection.",
+    "ai_response": "Evaporation is when water turns into vapor.",
+    "reference_answer": "The cycle involves evaporation (liquid to vapor), condensation (vapor cools to form clouds), precipitation (rain, snow, hail falling), and collection (water gathering in oceans, lakes, and ground).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 88,
+    "category": "incomplete",
+    "question": "What are the ingredients needed to make a traditional carbonara sauce?",
+    "ai_response": "You need eggs.",
+    "reference_answer": "Traditional carbonara requires eggs, Pecorino Romano cheese, guanciale (or pancetta), black pepper, and pasta water.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 89,
+    "category": "incomplete",
+    "question": "What are Newton's three laws of motion?",
+    "ai_response": "Newton's first law states that an object in motion stays in motion unless acted upon by a force.",
+    "reference_answer": "First: Law of inertia; Second: F=ma (force equals mass times acceleration); Third: Action and reaction are equal and opposite.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 90,
+    "category": "incomplete",
+    "question": "Explain the difference between aerobic and anaerobic respiration in terms of oxygen requirement and ATP yield.",
+    "ai_response": "Aerobic respiration requires oxygen.",
+    "reference_answer": "Aerobic respiration requires oxygen and produces a high yield of ATP (approx 36-38 ATP per glucose). Anaerobic respiration does not require oxygen and yields only 2 ATP per glucose, producing lactic acid or ethanol.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 91,
+    "category": "subtle_error",
+    "question": "Which organ secretes insulin, and what condition results from insufficient production or response to it?",
+    "ai_response": "The thyroid secretes insulin, and its deficiency leads to diabetes mellitus.",
+    "reference_answer": "The pancreas secretes insulin, and its deficiency or cellular resistance causes diabetes mellitus.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 92,
+    "category": "subtle_error",
+    "question": "What is the formula for kinetic energy?",
+    "ai_response": "The formula for kinetic energy is KE = m * v^2.",
+    "reference_answer": "Kinetic energy formula is KE = 0.5 * m * v^2 (or 1/2 m v squared).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 93,
+    "category": "subtle_error",
+    "question": "What is the largest desert in the world?",
+    "ai_response": "The Sahara Desert is the largest desert in the world.",
+    "reference_answer": "The Antarctic Desert is the largest desert on Earth, followed by the Arctic Desert, then the Sahara (which is the largest hot desert).",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 94,
+    "category": "subtle_error",
+    "question": "In what year did the Titanic sink?",
+    "ai_response": "The Titanic sank on its maiden voyage in April 1922.",
+    "reference_answer": "The RMS Titanic sank on April 15, 1912.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 95,
+    "category": "subtle_error",
+    "question": "What is the main function of hemoglobin in red blood cells?",
+    "ai_response": "Hemoglobin's primary function is to transport glucose and nutrients throughout the body.",
+    "reference_answer": "Hemoglobin binds and transports oxygen from the respiratory organs to the rest of the body.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 96,
+    "category": "subtle_error",
+    "question": "What is the binary representation of the decimal number 5?",
+    "ai_response": "The decimal number 5 in binary is 110.",
+    "reference_answer": "101 in binary represents decimal 5.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 97,
+    "category": "subtle_error",
+    "question": "Who was the Greek god of the sea?",
+    "ai_response": "Hades was the Greek god of the sea.",
+    "reference_answer": "Poseidon was the Greek god of the sea.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 98,
+    "category": "subtle_error",
+    "question": "What is the primary product of cellular aerobic respiration that organisms exhale?",
+    "ai_response": "Organisms primarily exhale pure nitrogen gas as the product of cellular respiration.",
+    "reference_answer": "Carbon dioxide (CO2) is produced by cellular respiration and exhaled.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 99,
+    "category": "subtle_error",
+    "question": "What is the capital of New Zealand?",
+    "ai_response": "Auckland is the capital of New Zealand.",
+    "reference_answer": "Wellington is the capital of New Zealand.",
+    "expected_label": "Fail"
+  },
+  {
+    "id": 100,
+    "category": "subtle_error",
+    "question": "How many valves does a normal human heart have?",
+    "ai_response": "A normal human heart has 2 valves.",
+    "reference_answer": "A normal human heart has 4 valves: tricuspid, pulmonary, mitral, and aortic.",
+    "expected_label": "Fail"
+  }
+]
