@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     groq_api_key: str = ""
-    groq_model: str = "llama-3.1-8b-instant"
+    groq_model: str = "qwen/qwen3.8-27b"
     groq_timeout: int = 90
     groq_inter_call_delay: float = 2.0
     chroma_persist_dir: str = "./data/chroma"

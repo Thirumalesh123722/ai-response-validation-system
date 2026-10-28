@@ -12,9 +12,10 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # Fallback model chain — if the configured model is unavailable we try alternatives.
 FALLBACK_MODELS = [
+    "qwen/qwen3.8-27b",
+    "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
     "llama-3.1-8b-instant",
-    "gemma2-9b-it",
-    "llama-3.1-70b-versatile",
 ]
 
 

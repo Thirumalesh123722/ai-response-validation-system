@@ -34,6 +34,17 @@ def on_startup():
     init_db()
 
 
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "service": "AI Response Validation System",
+        "version": "2.0.0",
+        "health": "/health",
+        "docs": "/docs",
+    }
+
+
 @app.get("/health")
 def health():
     key = settings.groq_api_key
