@@ -4,13 +4,15 @@ import { checkHealth } from '../lib/api'
 export default function ConnectionStatus() {
   const [state, setState] = useState('checking')
   const [detail, setDetail] = useState('')
+  const [fix, setFix] = useState('')
   const attemptsRef = useRef(0)
 
   const runCheck = useCallback(async (isRetryable) => {
     try {
       const res = await checkHealth()
       attemptsRef.current = 0
-      if (res.groq === 'ok') { setState('ok'); setDetail(`model: ${res.model}`) }
+      setFix(res.fix || '')
+      if (res.groq === 'ok' && res.model_available !== false) { setState('ok'); setDetail(`model: ${res.model}`) }
       else { setState('warn'); setDetail(res.groq) }
     } catch (err) {
       attemptsRef.current += 1
@@ -38,7 +40,8 @@ export default function ConnectionStatus() {
       <span className="text-[11px] font-mono text-base-muted">{config.label}</span>
       {detail && (
         <div className="absolute top-full right-0 mt-2 w-72 rounded-md border border-base-border bg-base-panel2 p-3 text-[11px] text-base-muted leading-relaxed opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10 shadow-xl text-left">
-          {detail}
+          <p>{detail}</p>
+          {fix && <p className="mt-1 text-signal-amber font-semibold">{fix}</p>}
         </div>
       )}
     </button>

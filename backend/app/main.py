@@ -36,20 +36,56 @@ def on_startup():
 
 @app.get("/health")
 def health():
-    if not settings.groq_api_key:
-        return {"status": "ok", "groq": "GROQ_API_KEY not set in backend/.env", "model": settings.groq_model}
+    key = settings.groq_api_key
+    if not key:
+        return {
+            "status": "ok",
+            "groq": "GROQ_API_KEY not set — add it in Render Environment Variables or backend/.env",
+            "model": settings.groq_model,
+            "fix": "Get a free key at https://console.groq.com/keys and set GROQ_API_KEY",
+        }
+
     groq_status = "unreachable"
+    available_models = []
+    model_available = False
+
     try:
-        resp = httpx.get("https://api.groq.com/openai/v1/models", headers={"Authorization": f"Bearer {settings.groq_api_key}"}, timeout=5)
+        resp = httpx.get(
+            "https://api.groq.com/openai/v1/models",
+            headers={"Authorization": f"Bearer {key}"},
+            timeout=10,
+        )
         if resp.status_code == 200:
             groq_status = "ok"
+            models_data = resp.json().get("data", [])
+            available_models = sorted([m["id"] for m in models_data])
+            model_available = settings.groq_model in available_models
+            if not model_available:
+                groq_status = f"connected but model '{settings.groq_model}' not found"
         elif resp.status_code in (401, 403):
-            groq_status = "invalid API key"
+            groq_status = f"invalid API key ({resp.status_code})"
         else:
             groq_status = f"unexpected response: {resp.status_code} {resp.text[:150]}"
     except Exception as exc:
         groq_status = f"unreachable: {exc}"
-    return {"status": "ok", "groq": groq_status, "model": settings.groq_model}
+
+    result = {
+        "status": "ok",
+        "groq": groq_status,
+        "model": settings.groq_model,
+        "model_available": model_available,
+    }
+
+    if available_models:
+        result["available_models"] = available_models
+
+    if not model_available and available_models:
+        result["fix"] = (
+            f"Model '{settings.groq_model}' is not available. "
+            f"Set GROQ_MODEL to one of: {', '.join(available_models[:5])}"
+        )
+
+    return result
 
 
 # ---- Everything below requires authentication and is scoped to the caller's organization ----

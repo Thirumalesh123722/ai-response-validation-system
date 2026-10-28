@@ -7,6 +7,7 @@ from app.agents.hallucination import HallucinationDetector
 from app.agents.completeness import CompletenessJudge
 from app.agents.verdict import VerdictAgent
 from app.agents import fallback
+from app.config import settings
 from app.rag.chroma_store import knowledge_base
 from app.schemas import EvaluationRequest, EvaluationResult
 
@@ -21,9 +22,14 @@ verdict_agent = VerdictAgent()
 
 def _run_safely(name, agent_call, fallback_call):
     try:
-        return agent_call()
-    except Exception:
-        logger.exception("Agent '%s' failed, using fallback heuristic instead", name)
+        result = agent_call()
+        logger.info("Agent '%s' succeeded via Groq API", name)
+        return result
+    except Exception as exc:
+        logger.exception(
+            "Agent '%s' failed with %s: %s — using fallback heuristic",
+            name, type(exc).__name__, exc,
+        )
         return fallback_call()
 
 
@@ -41,15 +47,16 @@ def _retrieve_context_safely(req: EvaluationRequest) -> list[str]:
 
 def run_evaluation(req: EvaluationRequest) -> EvaluationResult:
     retrieved_context: list[str] = _retrieve_context_safely(req)
+    delay = settings.groq_inter_call_delay
 
     relevance = _run_safely("relevance", lambda: relevance_judge.run(req.question, req.ai_response), lambda: fallback.fallback_relevance(req.question, req.ai_response))
-    time.sleep(1.5)
+    time.sleep(delay)
     accuracy = _run_safely("accuracy", lambda: accuracy_judge.run(req.question, req.ai_response, req.reference_answer, retrieved_context), lambda: fallback.fallback_accuracy(req.ai_response, req.reference_answer, retrieved_context))
-    time.sleep(1.5)
+    time.sleep(delay)
     hallucination = _run_safely("hallucination", lambda: hallucination_detector.run(req.question, req.ai_response, req.reference_answer, retrieved_context), lambda: fallback.fallback_hallucination(req.ai_response, req.reference_answer, retrieved_context))
-    time.sleep(1.5)
+    time.sleep(delay)
     completeness = _run_safely("completeness", lambda: completeness_judge.run(req.question, req.ai_response, req.reference_answer, retrieved_context), lambda: fallback.fallback_completeness(req.ai_response, req.reference_answer, retrieved_context))
-    time.sleep(1.5)
+    time.sleep(delay)
 
     dimension_results = {"relevance": relevance, "accuracy": accuracy, "hallucination": hallucination, "completeness": completeness}
 
